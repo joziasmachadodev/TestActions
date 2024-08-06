@@ -19,9 +19,6 @@ jobs:
         server: ${{ secrets.FTP_HOST }}
         username: ${{ secrets.FTP_USER }}
         password: ${{ secrets.FTP_PASSWORD }}
-        # server: www.ltagentesquimicos.com.br
         port: 21
-        # username: ltagen57
-        # password: nY5lvu480Y
         server-dir: sistema2.ltagentesquimicos.com.br/
     
