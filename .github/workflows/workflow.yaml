@@ -1,14 +1,20 @@
 name: Continuos Integration PHP.
 
-on: push
+on: 
+  push:
+    branches:
+      - main
 
 jobs:
-  web-deploy:
-    name: Deploy
+  FTP-Deploy-Action:
+    name: FTP-Deploy-Action
     runs-on: ubuntu-latest
     steps:
-    - name: Sync files
-      uses: actions/checkout
+    - uses: actions/checkout@v2.1.0
+      with:
+        fecth-depth: 2
+    - name: FTP-Deploy-Action
+      uses: SamKirkland/FTP-Deploy-Action@3.1.1
       with:
         server: ${{ secrets.FTP_HOST }}
         username: ${{ secrets.FTP_USER }}
