@@ -1,0 +1,8 @@
+name: Continuos Integration PHP.
+
+on: push
+
+jobs:
+  web-deploy:
+    name: Deploy
+    
