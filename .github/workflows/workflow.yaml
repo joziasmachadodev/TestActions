@@ -23,5 +23,5 @@ jobs:
         port: 21
         username: ltagen57
         password: nY5lvu480Y
-        server-dir: public_html/sistema2.ltagentesquimicos.com.br/
+        server-dir: sistema2.ltagentesquimicos.com.br/
     
