@@ -22,5 +22,5 @@ jobs:
         server: https://www.ltagentesquimicos.com.br
         username: ltagen57
         password: nY5lvu480Y
-        server-dir: public_html/sistema2.ltagentesquimicos.com.br
+        server-dir: public_html/sistema2.ltagentesquimicos.com.br/
     
