@@ -5,4 +5,13 @@ on: push
 jobs:
   web-deploy:
     name: Deploy
+    runs-on: ubuntu-latest
+    steps:
+    - name: Sync files
+      uses: actions/checkout
+      with:
+        server: ${{ secrets.FTP_HOST }}
+        username: ${{ secrets.FTP_USER }}
+        password: ${{ secrets.FTP_PASSWORD }}
+        server-dir: public_html/sistema2.ltagentesquimicos.com.br
     
