@@ -16,12 +16,12 @@ jobs:
     - name: FTP-Deploy-Action
       uses: SamKirkland/FTP-Deploy-Action@4.0.0
       with:
-        # server: ${{ secrets.FTP_HOST }}
-        # username: ${{ secrets.FTP_USER }}
-        # password: ${{ secrets.FTP_PASSWORD }}
-        server: www.ltagentesquimicos.com.br
+        server: ${{ secrets.FTP_HOST }}
+        username: ${{ secrets.FTP_USER }}
+        password: ${{ secrets.FTP_PASSWORD }}
+        # server: www.ltagentesquimicos.com.br
         port: 21
-        username: ltagen57
-        password: nY5lvu480Y
+        # username: ltagen57
+        # password: nY5lvu480Y
         server-dir: sistema2.ltagentesquimicos.com.br/
     
